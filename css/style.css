@@ -878,6 +878,7 @@ input:checked .checkbox-span {
     max-width: 1158px;
     padding: 112px 0;
   }
+ 
   
   .adress-item .adress-link{
   
@@ -1035,7 +1036,7 @@ letter-spacing: 0.72px;
   .container{
     padding: 0 16px;
   }
-  .footer .container{
-    width: 568px;
-  }
+  /* .container .foo{
+    max-width: 568px;
+  } */
 }
