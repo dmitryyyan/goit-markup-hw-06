@@ -39,7 +39,7 @@ img {
   width: 320px;
  
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 15px;
   
 }
 .visually-hidden {
@@ -497,6 +497,7 @@ a.employee-link:focus {
   display: inline-block;
 }
 .footer .container {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -859,9 +860,7 @@ input:checked .checkbox-span {
 /* media  */
 
 @media (min-width: 768px) {
-  .nav-list{
-    margin-right: 120px;
-  }
+
   .logo{
     margin-right: 120px;
   }
@@ -879,6 +878,16 @@ input:checked .checkbox-span {
     max-width: 1158px;
     padding: 112px 0;
   }
+  
+  .adress-item .adress-link{
+  
+
+    font-size: 12px;
+    
+    font-weight: 400;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.48px;
+      }
   .section-second-list,
   .section-third-list,
   .section-fourth-list {
@@ -921,7 +930,9 @@ input:checked .checkbox-span {
   .ftr-media {
     text-align: left;
   }
-
+  .menu-container{
+    display: none;
+  }
   .modal {
     max-width: 408px;
   }
@@ -950,9 +961,7 @@ input:checked .checkbox-span {
     opacity: 1;
     visibility: visible;
     position: static;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
     height: 112px;
     background: var(--light);
     border-radius: 4px;
@@ -976,12 +985,24 @@ input:checked .checkbox-span {
   .sub-footer {
     margin-left: 80px;
   }
+  .section-first .main-title{
+    margin-bottom: 36px;
 
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
   .section-first .main-title{
     margin-bottom: 72px;
+
+   
+
+font-size: 36px;
+
+
+line-height: 1.11; /* 111.111% */
+letter-spacing: 0.72px;
+
   }
   .modal{
     width: 288px;
@@ -992,6 +1013,7 @@ input:checked .checkbox-span {
   .adress {
     display: none;
   }
+ 
   .nav-list {
     display: none;
   }
@@ -1008,6 +1030,12 @@ input:checked .checkbox-span {
     text-transform: capitalize;
   }
   .section-list-text {
-    font-weight: 400;
+    font-weight: 500;
+  }
+  .container{
+    padding: 0 16px;
+  }
+  .footer .container{
+    width: 568px;
   }
 }
