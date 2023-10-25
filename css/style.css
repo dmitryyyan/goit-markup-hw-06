@@ -305,10 +305,9 @@ a.nav-list-item {
   align-items: center;
 }
 .section-second-list-item {
-  font-style: normal;
+ 
   line-height: 24px;
-  display: flex;
-  flex-direction: column;
+  
   flex-basis: calc((100% - 72px) / 4);
   
 }
@@ -856,14 +855,25 @@ input:checked .checkbox-span {
 .ft-menu {
   gap: 40px;
 }
+ .pop{
+  font-weight: 500;
+}
 
 /* media  */
 
 @media (min-width: 768px) {
+  
+  .section-first .main-title{
+    margin-bottom: 36px;
 
+  }
   .logo{
     margin-right: 120px;
   }
+  .section {
+    padding: 76px 0;
+  }
+ 
   .mobile-contacts {
     margin-bottom: 36px;
   }
@@ -871,6 +881,7 @@ input:checked .checkbox-span {
     width: 768px;
     
   }
+
   .section-h-third {
     text-align: left;
   }
@@ -892,6 +903,7 @@ input:checked .checkbox-span {
   .section-second-list,
   .section-third-list,
   .section-fourth-list {
+    
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -939,6 +951,20 @@ input:checked .checkbox-span {
   }
 }
 @media (min-width: 1158px) {
+  .pop{
+    font-weight: 400;
+  }
+ 
+  .section-first .main-title{
+    margin-bottom: 48px;
+
+  }
+  .logo{
+    margin-right: 76px;
+  }
+  .section {
+    padding: 120px 0;
+  }
   .container {
     width: 1158px;
   }
@@ -946,9 +972,7 @@ input:checked .checkbox-span {
     max-width: 1440px;
     padding: 188px 0;
   }
-  .section {
-    padding: 112px 0;
-  }
+ 
   .adress-list {
     flex-direction: row;
     gap: 40px;
@@ -986,18 +1010,22 @@ input:checked .checkbox-span {
   .sub-footer {
     margin-left: 80px;
   }
-  .section-first .main-title{
-    margin-bottom: 36px;
-
-  }
+  
 }
 
 @media only screen and (max-width: 767.98px) {
+
+  .section-third-list{
+    display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 72px;
+  }
+
   .section-first .main-title{
     margin-bottom: 72px;
 
-   
-
+  
 font-size: 36px;
 
 
@@ -1005,6 +1033,11 @@ line-height: 1.11; /* 111.111% */
 letter-spacing: 0.72px;
 
   }
+ 
+  .section {
+    padding: 76px 0;
+  }
+ 
   .modal{
     width: 288px;
   }
@@ -1019,10 +1052,12 @@ letter-spacing: 0.72px;
     display: none;
   }
   .header-menu-btn {
-    display: inline;
+    display: inline-block;
   }
 }
 @media only screen and (max-width: 1158px) {
+  
+
   .section-second-list-item .section-h-third {
     font-size: 36px;
     font-weight: 700;
@@ -1030,13 +1065,12 @@ letter-spacing: 0.72px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
   }
-  .section-list-text {
-    font-weight: 500;
-  }
+ 
   .container{
     padding: 0 16px;
   }
   /* .container .foo{
     max-width: 568px;
   } */
+ 
 }
